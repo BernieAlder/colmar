@@ -1,0 +1,462 @@
+html{
+color: grey;
+font-family: sans-serif;
+max-width: 1600px;
+font-size: 16px;
+}
+
+body{
+text-align: center;
+position: relative;
+}
+
+
+img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 480px){
+    button{
+        background-color: gray;
+        color: rgb(192, 189, 189);
+    }
+}
+
+/*Navigation bar*/
+
+nav{
+text-decoration: none;
+display: inline;
+height: 4rem;
+max-width: 100%;
+}
+
+ul{
+list-style: none;
+display: inline-flex;
+text-align: end;
+float: right;
+}
+
+li{
+padding: 1rem;
+color: black;
+opacity: .9;
+font-size: 18px;
+}
+
+#logo{
+align-items: flex-start;
+float: left;
+height: 4.5rem;
+width: 3rem;
+margin-left: 1.5rem;
+size: 2rem;
+}
+
+#logo-name{
+float: left;
+align-items: flex-start;
+font-size: 1.25rem;
+margin-top: 1.5rem;
+}
+
+#logo-name strong{
+    color: black;
+}
+
+/*first section*/
+
+.start-up{
+background-color: rgb(235, 232, 232);
+display: grid;
+width: 1600px;
+column-gap: 56px;
+grid-template-columns: 60% 40%;
+grid-template-areas: "img"
+                     "heading"
+                     "h3"
+                     "button";
+}
+
+.start-up img{
+grid-area: 1 / 1 / span 1 / span 1;
+margin-top: 2rem;
+margin-left: 1.5rem;
+margin-bottom: 2rem;
+margin-right: 2rem;
+}
+
+.start-up #heading{
+grid-area: 1 / 2 / span 1 / span 1;
+font-weight: bold;
+font-size: 3rem;
+text-align: left;
+color: rgb(73, 73, 73);
+margin-top: 9rem;
+}
+
+.start-up #h3{
+grid-area: 1 / 2 / span 1 / span 1;
+font-size: 2rem;
+text-align: left;
+margin-top: 2rem;
+padding-top: 280px;
+color: rgb(73, 73, 73);
+padding-bottom: 3rem;
+}
+
+.start-up button{
+font-size: 2rem;
+grid-column: 2;
+background-color: rgba(73, 73, 73);
+color: cornsilk;
+border: none;
+border-radius: 4px;
+width: 400px;
+padding: 14px 40px;
+margin-top: 4rem;
+}
+
+
+/*Second section*/
+.university-life{
+display: grid;
+width: auto;
+height: auto;
+grid-row: repeat(3, 1fr);
+grid-column: 800px 750px;
+grid-template-areas: "photo"
+                     "quote"
+                     "info"
+                     "campus"
+                     "lecture";
+background-color: white;
+column-gap: 2rem;
+}
+
+.university-life #photo{
+grid-area: 1 / 1 / span2 / span 1;
+margin-top: 2.5rem;
+margin-left: 1rem;
+
+}
+
+.university-life #quote {
+grid-area: 3 / 1 / span 1 / span 1;
+margin-top: 2rem;
+text-align: left;
+}
+
+.university-life #quote h2 {
+font-size: 50px;
+color: rgb(68, 67, 67);
+margin-bottom: 1.5rem;
+font-weight: bolder;
+}
+
+.university-life #quote h4 {
+font-size: 1.5rem;
+font-weight: lighter;
+margin-bottom: 2.5rem;
+}
+
+.university-life #quote h5 {
+margin-bottom: 32px;
+font-size: 16px;
+}
+
+.university-life button {
+border: none;
+background-color: rgb(240, 239, 234);
+padding: 10px;
+margin-left: 14px;
+color: rgb(96, 96, 239);
+font-size: 18px;
+}
+
+.university-life span {
+display: block;
+max-width: 60%;
+text-align: left;
+margin-top: 24px;
+}
+
+.university-life span h3 {
+padding: 14px;
+font-size: 24px;
+justify-items: center;
+font-weight: light;
+color: rgb(61, 60, 60);
+margin-bottom: 8px;
+margin-top: 32px;
+}
+
+.university-life span h4 {
+padding-left: 14px;
+margin-top: 8px;
+font-weight: normal;
+margin-bottom: 8px;
+}
+
+.university-life #info {
+grid-area: 1 / 2 / span 1 / span 1;
+display: inline-flex;
+}
+
+.university-life #info img {
+max-width: 40%;
+margin-top: 2.5rem;
+margin-bottom: 2rem;
+}
+
+.university-life #campus {
+grid-area: 2 / 2 / span 1 / span 1;
+display: inline-flex;
+}
+
+.university-life #campus img{
+max-width: 40%;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.university-life #lecture {
+grid-area: 3 / 2 / span 1 / span 1;
+display: inline-flex;
+background-color: rgb(232, 230, 230);
+}
+
+.university-life #lecture img{
+max-width: 40%;
+margin-top: 2rem;
+}
+
+
+/*Third section*/
+.courses {
+    display: grid;
+
+    grid-row: repeat(3, 1fr);
+    grid-column: repeat(3, 1fr);
+    grid-template-areas: "heading"
+                         "software"
+                         "computer"
+                         "design"
+                         "data"
+                         "business"
+                         "marketing";
+    background-color: rgb(232, 230, 230);
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+}
+
+.courses #heading{
+   grid-area: 1 / 1 / span 1 / span 3;
+  font-size: 2rem;
+  color: rgba(23, 23, 23, 0.781);
+  font-weight: bold;
+  align-items: flex-start;
+  float: inline-start;
+}
+
+.courses #background{
+    background-color: white;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.courses h3 {
+    color: rgba(23, 23, 23, 0.781);
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.courses h5{
+ color: gray;
+ font-size: 1.5rem;
+ opacity: .7;
+}
+
+.courses h6{
+ color: gray;
+ font-size: 1rem;
+ opacity: .7;
+}
+
+.courses #software #background {
+    padding-bottom: 2.5rem;
+}
+
+.courses #data #background {
+    padding-bottom: 1.5rem;
+}
+
+.courses #design #background{
+    padding-bottom: 2.5rem;
+}
+
+.courses #software img{
+    height: 15rem;
+}
+
+.courses #computer img{
+    height: 15rem;
+}
+
+.courses #design img{
+    height: 15rem;
+}
+
+.courses #data img{
+    height: 15rem;
+}
+
+.courses #business img{
+    height: 15rem;
+}
+
+.courses #marketing img{
+    height: 15rem;
+}
+
+.courses #software{
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+.courses #computer{
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.courses #design{
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.courses #data{
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.courses #business{
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.courses #marketing{
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+/*Fourth section*/
+.thesis {
+    display: grid;
+    height: 1200px;
+    grid-template: 150px 300px 300px 200px / 60% 40%;
+    grid-template-areas: "heading heading"
+                         "video fisma"
+                         "video now"
+                         "vid-info vid-info";
+    background-color: white;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+}
+
+.thesis #heading{
+    grid-area: 1 / 1 / span 1 / span 2;
+    color: rgba(23, 23, 23, 0.781);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.thesis video{
+grid-area: 2 / 1 / span 2 / span 1;
+max-width: 950px;
+}
+
+.thesis #video {
+ padding-left: 1rem;
+}
+
+.thesis #vid-info{
+ grid-area: 4 / 1 / span 1 / span 1;
+ padding-bottom: 2rem;
+padding-top: 2rem;
+}
+
+.thesis #video h3 {
+ padding-top: 1.5rem;
+ text-align: left;
+ font-size: 2rem;
+ color: rgba(23, 23, 23, 0.781);
+}
+
+.thesis #video h4{
+ text-align: left;
+ font-size: 1.5rem;
+ opacity: .7;
+ line-height: 1.5;
+ font-weight: normal;
+}
+
+.thesis #fisma{
+ grid-area: 2 / 2 / span 1 / span 1;
+ display: inline-flex;
+ background-color: rgb(211, 205, 205);
+}
+
+.thesis span {
+    display: inline;
+    width: 65%;
+    text-align: left;
+    padding-left: 1rem;
+}
+.thesis #now{
+ grid-area: 3 / 2 / span 1 / span 1;
+ display: inline-flex;
+}
+
+.thesis h3{
+font-size: 1.5rem;
+margin-top: 4.5rem;
+margin-bottom: .5rem;
+}
+
+.thesis h6{
+font-size: 1rem;
+opacity: .7;
+margin-top: .5rem;
+font-weight: normal;
+}
+
+/*Footer*/
+
+.copyright span{
+    text-align: start;
+    float: left;
+    margin-left: 1.5rem;
+}
+
+.copyright h6{
+    text-align: end;
+    font-weight: normal;
+    gap: .5rem;
+}
+
+.fa-light {
+    color: gray;
+    size: fa-2x;
+}
+
+
+
+
+
+
+
+
+
+
