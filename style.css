@@ -162,16 +162,17 @@ color: rgb(64, 64, 219);
 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-@media only screen and (min-width:200px), (orientation: portrait) and (max-width: 770px){
+@media only screen and (min-width < 780px) and (orientation: portrait) {
     .start-up{
         display: flex;
         flex-direction: column;
         padding: 0;
     }
 
-     .info{
+     .start-up .info{
         display: flex;
         flex-direction: row;
+        width: 100%;
         align-items: center;
         margin: 0;
         padding: 0 1rem 2rem;
