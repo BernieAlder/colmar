@@ -168,8 +168,10 @@ html{
             flex-direction: column;
             padding: 0;
         }
-    
         .start-up .info{
+            display: none;
+        }
+        .mobile-format{
             align-items: center;
             margin: 0;
             padding: 2rem 1rem;
