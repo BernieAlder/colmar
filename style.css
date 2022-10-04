@@ -170,11 +170,12 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
      .start-up .info{
-       
+       justify-content: center;
         align-items: center;
         margin: 0;
         padding: 0 1rem 2rem;
         background-color: rgb(194, 190, 190);
+        width: 100%;
     }
 
     .start-up img{
