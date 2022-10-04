@@ -23,7 +23,7 @@ img{
 
 @media only screen and (max-width: 480px){
     button{
-        background-color: gray;
+        background-color: rgb(153, 152, 152);
         color: rgb(192, 189, 189);
     }
 }
@@ -86,7 +86,7 @@ color: black;
     }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 770px) {
+@media only screen and (min-width: 200px), (orientation: portrait) and (max-width: 770px) {
     .desktop{
         display: none;
     }
@@ -162,7 +162,7 @@ color: rgb(64, 64, 219);
 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-@media only screen and (min-width:200px) and (max-width: 770px){
+@media only screen and (min-width:200px), (orientation: portrait) and (max-width: 770px){
     .start-up{
         display: flex;
         flex-direction: column;
@@ -300,7 +300,7 @@ width: 40%;
     display: none;
 }
 
-@media only screen and (min-width:200px) and (max-width:770px) {
+@media only screen and (min-width:200px), (orientation: portrait) and (max-width:770px) {
     .university-life #photo{
         display: none;
     }
@@ -393,11 +393,15 @@ transform: scale(1.075);
 opacity: .7;
 }
 
-@media only screen and (min-width:200px) and (max-width:770px){
+@media only screen and (min-width:200px), (orientation: portrait) and (max-width:770px){
     .start{
         padding: 2rem 1rem;
         border-bottom: 2px solid #0a0a0a;
         border-top: 2px solid #0a0a0a;
+    }
+
+    .start .courses{
+        display: none;
     }
 
     .start .department img{
@@ -500,7 +504,7 @@ padding-left: 1rem;
  width: 35%;
 }
 
-@media only screen and (min-width:200px) and (max-width: 770px) {
+@media only screen and (min-width:200px), (orientation: portrait) and (max-width: 770px) {
     .thesis{
         padding: 1rem 0 1.5rem 0;
     }
