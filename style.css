@@ -1,15 +1,20 @@
 html{
 color: grey;
 font-family: sans-serif;
-max-width: 1600px;
 font-size: 16px;
 }
 
 body{
-text-align: center;
-position: relative;
+margin: 0;
 }
 
+.container{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+max-width: 90rem;
+/*padding: 0 1.5rem;*/
+}
 
 img{
     max-width: 100%;
@@ -25,128 +30,180 @@ img{
 
 /*Navigation bar*/
 
-nav{
-text-decoration: none;
-display: inline;
+.mobile-nav{
+display: none;
+}
+
+.desktop{
 height: 4rem;
-max-width: 100%;
+width: 100%;
+display: flex;
+justify-content: space-between;
 }
 
-ul{
-list-style: none;
+.header-left {
 display: inline-flex;
-text-align: end;
-float: right;
+align-items: center;
+padding: 0px 0px 0px 24px;
 }
 
-li{
-padding: 1rem;
-color: black;
-opacity: .9;
-font-size: 18px;
+.header-right{
+display: inline-flex;
+align-items: center;
+padding: 0px 24px 0px 0px;
 }
 
 #logo{
-align-items: flex-start;
-float: left;
 height: 4.5rem;
 width: 3rem;
-margin-left: 1.5rem;
-size: 2rem;
 }
 
 #logo-name{
-float: left;
-align-items: flex-start;
-font-size: 1.25rem;
-margin-top: 1.5rem;
+height: 2rem;
+font-size: 1.5rem;  
 }
 
 #logo-name strong{
-    color: black;
+color: black;
+font-size: 1.5rem;
 }
+
+header ul{
+list-style: none;
+display: flex;
+}
+
+a{
+padding: 0px 0px 0px 16px;
+text-decoration: none;
+color: black;
+}
+
+/*Navigation Media Query for Desktop*/
+@media only screen and (min-width:771px) {
+    nav a:hover {
+        color: #cdb684;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 770px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+    }
+}
+
+
+
+
+
 
 /*first section*/
 
 .start-up{
 background-color: rgb(235, 232, 232);
-display: grid;
-width: 1600px;
-column-gap: 56px;
-grid-template-columns: 60% 40%;
-grid-template-areas: "img"
-                     "heading"
-                     "h3"
-                     "button";
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 2rem 1.5rem;
+
 }
 
-.start-up img{
-grid-area: 1 / 1 / span 1 / span 1;
-margin-top: 2rem;
-margin-left: 1.5rem;
-margin-bottom: 2rem;
-margin-right: 2rem;
+.start-up .info{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-left: 0.75rem;
+width: 40%;
 }
 
 .start-up #heading{
-grid-area: 1 / 2 / span 1 / span 1;
 font-weight: bold;
 font-size: 3rem;
 text-align: left;
 color: rgb(73, 73, 73);
-margin-top: 9rem;
+display: flex;
+flex-direction: column;
 }
 
+.start-up img{
+width: 60%;
+margin-right: 1.5rem;
+}
 .start-up #h3{
-grid-area: 1 / 2 / span 1 / span 1;
 font-size: 2rem;
 text-align: left;
-margin-top: 2rem;
-padding-top: 280px;
 color: rgb(73, 73, 73);
-padding-bottom: 3rem;
+padding-top: 1.5rem;
 }
 
 .start-up button{
 font-size: 2rem;
-grid-column: 2;
-background-color: rgba(73, 73, 73);
+background-color: rgb(145, 151, 229);
 color: cornsilk;
 border: none;
-border-radius: 4px;
+border-radius: 8px;
 width: 400px;
 padding: 14px 40px;
 margin-top: 4rem;
 }
 
+.start-up button:hover{
+transition: all 400ms ease-in-out 100ms;
+color: rgb(64, 64, 219);
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
+@media only screen and (min-width:200px) and (max-width: 770px){
+    .start-up{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .start-up .info{
+        align-items: center;
+        margin: 0;
+        padding: 2rem 1rem;
+        background-color: rgb(194, 190, 190);
+    }
+
+    .start-up img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .start-up button{
+        width: 80%;
+        padding: 0;
+        background-color: rgb(145, 151, 229);
+        font-weight: bold;
+    }
+}
 /*Second section*/
 .university-life{
-display: grid;
-width: auto;
-height: auto;
-grid-row: repeat(3, 1fr);
-grid-column: 800px 750px;
-grid-template-areas: "photo"
-                     "quote"
-                     "info"
-                     "campus"
-                     "lecture";
+display: flex;
+flex-direction: row;
 background-color: white;
-column-gap: 2rem;
+justify-content: center;
+/*padding-left: 1.5rem;*/
 }
 
 .university-life #photo{
-grid-area: 1 / 1 / span2 / span 1;
-margin-top: 2.5rem;
-margin-left: 1rem;
-
+width: 60%;
+padding: 2rem 1.5rem;
 }
 
-.university-life #quote {
-grid-area: 3 / 1 / span 1 / span 1;
-margin-top: 2rem;
-text-align: left;
+.university-life img{
+    width: 100%;
 }
 
 .university-life #quote h2 {
@@ -167,270 +224,305 @@ margin-bottom: 32px;
 font-size: 16px;
 }
 
-.university-life button {
+.info-links button {
 border: none;
-background-color: rgb(240, 239, 234);
 padding: 10px;
 margin-left: 14px;
 color: rgb(96, 96, 239);
 font-size: 18px;
+text-decoration: none;
 }
 
-.university-life span {
-display: block;
-max-width: 60%;
+.info-links span {
 text-align: left;
 margin-top: 24px;
+display: flex;
+flex-direction: column;
+align-items: left;
+width: 60%;
 }
 
-.university-life span h3 {
-padding: 14px;
-font-size: 24px;
-justify-items: center;
-font-weight: light;
-color: rgb(61, 60, 60);
-margin-bottom: 8px;
-margin-top: 32px;
+.info-links h3 {
+font-weight: bold;
+color: rgb(59, 59, 59);
+padding-left: 1rem;
 }
 
-.university-life span h4 {
+.info-links h4 {
 padding-left: 14px;
 margin-top: 8px;
 font-weight: normal;
 margin-bottom: 8px;
 }
 
-.university-life #info {
-grid-area: 1 / 2 / span 1 / span 1;
+.info-links{
+display: flex;
+flex-direction: column;
+width: 40%;
+}
+
+#info{
+display: inline-flex;
+margin-top: 1rem;
+}
+
+#campus{
 display: inline-flex;
 }
 
-.university-life #info img {
-max-width: 40%;
-margin-top: 2.5rem;
-margin-bottom: 2rem;
-}
-
-.university-life #campus {
-grid-area: 2 / 2 / span 1 / span 1;
+#lecture{
 display: inline-flex;
+
 }
 
-.university-life #campus img{
-max-width: 40%;
-margin-top: 2rem;
-margin-bottom: 2rem;
+#lecture:hover {
+transition: background-color 400ms ease-in-out 100ms; 
+background-color: rgb(159, 159, 247);   
 }
 
-.university-life #lecture {
-grid-area: 3 / 2 / span 1 / span 1;
-display: inline-flex;
-background-color: rgb(232, 230, 230);
+#campus:hover {
+    transition: background-color 400ms ease-in-out 100ms; 
+    background-color: rgb(159, 159, 247) ;  
 }
 
-.university-life #lecture img{
-max-width: 40%;
-margin-top: 2rem;
+#info:hover {
+    transition: background-color 400ms ease-in-out 100ms; 
+    background-color: rgb(159, 159, 247) ;  
+}
+.info-links .desktop-img{
+height: auto;
+width: 40%;
+ margin: 1rem;
+ padding: .5rem;
 }
 
+.mobile-img{
+    display: none;
+}
+
+@media only screen and (min-width:200px) and (max-width:770px) {
+    .university-life #photo{
+        display: none;
+    }
+
+    .university-life{
+        padding: 1rem;
+    }
+
+    .info-links .desktop-img{
+        display: none;
+    }
+
+    .info-links{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    #info, #campus, #lecture{
+        border: 0;
+        margin-bottom: 32px;
+    }
+
+    #campus, #lecture{
+        margin-top: 2rem;
+    }
+
+    .info-links .mobile-img{
+        width: 100%;
+        display: block;
+    }
+
+    .info-links span{
+        padding: 0 1rem;
+    }
+}
 
 /*Third section*/
-.courses {
-    display: grid;
-
-    grid-row: repeat(3, 1fr);
-    grid-column: repeat(3, 1fr);
-    grid-template-areas: "heading"
-                         "software"
-                         "computer"
-                         "design"
-                         "data"
-                         "business"
-                         "marketing";
-    background-color: rgb(232, 230, 230);
-    gap: 2rem;
-    padding-top: 4rem;
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+.start {
+display: flex;
+flex-direction: column;
+padding: 2rem 4.5rem;
+background-color: rgb(240, 239, 239);
+margin: 0;
 }
 
-.courses #heading{
-   grid-area: 1 / 1 / span 1 / span 3;
-  font-size: 2rem;
-  color: rgba(23, 23, 23, 0.781);
-  font-weight: bold;
-  align-items: flex-start;
-  float: inline-start;
+.start .courses {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+width: 100%;
+border-radius: 0.5rem;
+    border: 1px solid white;
+    transition-property: all;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in-out;
 }
 
-.courses #background{
-    background-color: white;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
-    text-align: left;
-    padding-left: 1rem;
+.start #heading{
+font-size: 2rem;
+color: rgb(83, 83, 83);
+text-align: center;
+padding-bottom: 2rem;
 }
 
-.courses h3 {
-    color: rgba(23, 23, 23, 0.781);
-    padding-top: 1rem;
-    font-size: 2rem;
+.department{
+display: flex;
+flex-direction: column;
+padding: 1rem;
+width: 25%;
 }
 
-.courses h5{
- color: gray;
- font-size: 1.5rem;
- opacity: .7;
+.department img{
+height: auto;
+width: 100%
 }
 
-.courses h6{
- color: gray;
- font-size: 1rem;
- opacity: .7;
+.start .background {
+margin-top: -1.5rem;
+padding: 1rem 1rem 1.5rem;  
+background-color: white;
 }
 
-.courses #software #background {
-    padding-bottom: 2.5rem;
+.start .department:hover{
+transform: scale(1.075);
 }
 
-.courses #data #background {
-    padding-bottom: 1.5rem;
+.start .background h5, h6{
+opacity: .7;
 }
 
-.courses #design #background{
-    padding-bottom: 2.5rem;
+@media only screen and (min-width:200px) and (max-width:770px){
+    .start{
+        padding: 2rem 1rem;
+        border-bottom: 2px solid #0a0a0a;
+        border-top: 2px solid #0a0a0a;
+    }
+
+    .start .department img{
+        display: none;
+    }
+
+    .start .background h5, h6{
+        display: none;
+    }
+
+    .start .background h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: .5rem;
+        background-color: rgb(204, 200, 200);
+        color: rgb(83, 83, 83);
+        text-align: center;
+    }
+
+    .start #heading{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.courses #software img{
-    height: 15rem;
-}
-
-.courses #computer img{
-    height: 15rem;
-}
-
-.courses #design img{
-    height: 15rem;
-}
-
-.courses #data img{
-    height: 15rem;
-}
-
-.courses #business img{
-    height: 15rem;
-}
-
-.courses #marketing img{
-    height: 15rem;
-}
-
-.courses #software{
-    grid-area: 2 / 1 / span 1 / span 1;
-}
-.courses #computer{
-    grid-area: 2 / 2 / span 1 / span 1;
-}
-
-.courses #design{
-    grid-area: 2 / 3 / span 1 / span 1;
-}
-
-.courses #data{
-    grid-area: 3 / 1 / span 1 / span 1;
-}
-
-.courses #business{
-    grid-area: 3 / 2 / span 1 / span 1;
-}
-
-.courses #marketing{
-    grid-area: 3 / 3 / span 1 / span 1;
-}
 
 /*Fourth section*/
 .thesis {
-    display: grid;
-    height: 1200px;
-    grid-template: 150px 300px 300px 200px / 60% 40%;
-    grid-template-areas: "heading heading"
-                         "video fisma"
-                         "video now"
-                         "vid-info vid-info";
     background-color: white;
-    row-gap: 1.5rem;
-    column-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem .5rem 2rem 1.5rem;
+    justify-content: center;
 }
 
 .thesis #heading{
-    grid-area: 1 / 1 / span 1 / span 2;
     color: rgba(23, 23, 23, 0.781);
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+}
+
+.thesis .main{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+.left-side{
+padding-right: 1.5rem;
+width: 60%;
+}
+
+.right-side{
+display: flex;
+flex-direction: column;
+width: 40%;
 }
 
 .thesis video{
-grid-area: 2 / 1 / span 2 / span 1;
-max-width: 950px;
+    width: 100%;
 }
 
-.thesis #video {
- padding-left: 1rem;
+#fisma, #now{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.thesis #vid-info{
- grid-area: 4 / 1 / span 1 / span 1;
- padding-bottom: 2rem;
-padding-top: 2rem;
+#now{
+    padding: 1rem 0;
 }
 
-.thesis #video h3 {
- padding-top: 1.5rem;
- text-align: left;
- font-size: 2rem;
- color: rgba(23, 23, 23, 0.781);
+#fisma:hover{
+background-color: rgb(173, 173, 173);
+color: white;
 }
-
-.thesis #video h4{
- text-align: left;
- font-size: 1.5rem;
- opacity: .7;
- line-height: 1.5;
- font-weight: normal;
+#now:hover{
+background-color: rgb(173, 173, 173);
+color: white;
 }
-
-.thesis #fisma{
- grid-area: 2 / 2 / span 1 / span 1;
- display: inline-flex;
- background-color: rgb(211, 205, 205);
-}
-
-.thesis span {
-    display: inline;
-    width: 65%;
-    text-align: left;
-    padding-left: 1rem;
-}
-.thesis #now{
- grid-area: 3 / 2 / span 1 / span 1;
- display: inline-flex;
-}
-
-.thesis h3{
+.right-side h3 {
 font-size: 1.5rem;
-margin-top: 4.5rem;
-margin-bottom: .5rem;
+padding-top: 1rem;
 }
 
-.thesis h6{
+.right-side h6 {
 font-size: 1rem;
 opacity: .7;
-margin-top: .5rem;
-font-weight: normal;
 }
+
+.right-side h3, h6{
+padding-left: 1rem;
+}
+
+.right-side img{   
+ height: auto;
+ width: 35%;
+}
+
+@media only screen and (min-width:200px) and (max-width: 770px) {
+    .thesis{
+        padding: 1rem 0 1.5rem 0;
+    }
+
+    .left-side{
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side #vid-info{
+        display: none;
+    }
+
+    .thesis #heading{
+        margin: 1rem 0;
+    }
+}
+
 
 /*Footer*/
 
@@ -451,6 +543,15 @@ font-weight: normal;
     size: fa-2x;
 }
 
+@media only screen and (min-width:200px) and (max-width: 770px){
+    .copyright{
+      padding: 1rem;
+    }
+
+    .copyright h6{
+        display: none;
+    }
+}
 
 
 
