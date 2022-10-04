@@ -168,9 +168,7 @@ html{
             flex-direction: column;
             padding: 0;
         }
-        .start-up .info{
-            display: none;
-        }
+        
         .start-up .mobile-format{
             width: 100%;
             align-items: center;
