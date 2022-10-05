@@ -172,6 +172,7 @@ html{
         .start-up .mobile-format{
             width: 100%;
             align-items: center;
+            justify-content: center;
             margin: 0;
             padding: 2rem 1rem;
             background-color: rgb(201, 195, 195);
@@ -184,7 +185,7 @@ html{
     
         .start-up button{
             width: 80%;
-            padding: 0;
+            padding: .5rem;
             background-color: rgb(145, 151, 229);
             font-weight: bold;
         }
