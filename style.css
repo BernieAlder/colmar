@@ -170,17 +170,14 @@ html{
         }
         
         .start-up .mobile-format{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
+            text-align: center;
             align-items: center;
-            justify-content: center;
             margin: 0;
-            padding: 1rem;
+            padding: 0 1rem 2rem;
             background-color: rgb(201, 195, 195);
         }
     
-        .start-up img{
+        .start-up .mobile-format img{
             width: 100%;
             margin: 0;
         }
