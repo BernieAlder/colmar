@@ -125,7 +125,7 @@ html{
     width: 40%;
     }
     
-    .start-up #heading{
+    .start-up h2{
     font-weight: bold;
     font-size: 3rem;
     text-align: left;
@@ -138,11 +138,13 @@ html{
     width: 60%;
     margin-right: 1.5rem;
     }
-    .start-up #h3{
+    .start-up h3{
     font-size: 2rem;
     text-align: left;
     color: rgb(73, 73, 73);
-    padding-top: 1.5rem;
+    padding-top: .5rem;
+    opacity: .7;
+    font-weight: lighter;
     }
     
     .start-up button{
