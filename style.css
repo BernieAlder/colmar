@@ -163,13 +163,17 @@ html{
     }
     
     @media only screen and (min-width:200px) and (max-width: 770px){
-        .start-up{
+        .desktop-version{
+            display: none;
+        }
+        
+        .mobile-version .start-up{
             display: flex;
             flex-direction: column;
             padding: 0;
         }
         
-        .start-up .mobile-format{
+        .mobile-version .info {
             text-align: center;
             align-items: center;
             margin: 0;
