@@ -175,13 +175,11 @@ html{
             display: none;
         }
         
-        .mobile-version .begin-mob{
-            display: flex;
-            flex-direction: column;
-            padding: 0;
+         .begin-mob{
+          padding: 0;
         }
         
-        .mobile-version .info-mob {
+         .info-mob {
             display: flex;
             flex-direction: column;
             text-align: center;
