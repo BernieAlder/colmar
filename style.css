@@ -175,13 +175,13 @@ html{
             display: none;
         }
         
-         .mobile-version{
+         span{
           display: flex;
           flex-direction: column;
           padding: 0;
         }
         
-         .info-mob {
+         span .info-mob {
             text-align: center;
             align-items: center;
             margin: 0;
@@ -189,12 +189,12 @@ html{
             background-color: rgb(201, 195, 195);
         }
     
-        .begin-mob img{
+        span img{
             width: 100%;
             margin: 0;
         }
     
-        .info-mob button{
+        span button{
             width: 80%;
             padding: 1.5rem;
             background-color: rgb(145, 151, 229);
