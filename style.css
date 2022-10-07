@@ -182,6 +182,8 @@ html{
         }
         
         .mobile-version .info-mob {
+            display: flex;
+            flex-direction: column;
             text-align: center;
             align-items: center;
             width: 100%;
