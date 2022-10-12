@@ -177,11 +177,15 @@ html{
         
          span{
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           padding: 0;
+          width: 100%;
         }
         
          span .info-mob {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
             text-align: center;
             align-items: center;
             margin: 0;
