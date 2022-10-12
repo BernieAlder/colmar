@@ -187,13 +187,12 @@ html{
             text-align: center;
             align-items: center;
             margin: 0;
-            padding-top: 4rem;
+            padding-top: 4.5rem;
             padding-bottom: 2rem;
             background-color: rgb(232, 226, 226);
         }
 
         #info-mob h2{
-            padding-top: 3rem;
             padding-bottom: 2rem;
             color: rgb(32, 32, 32);
             font-size: 2rem;
