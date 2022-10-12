@@ -179,12 +179,11 @@ html{
           display: flex;
           flex-direction: row;
           padding: 0;
-          margin-top: 1rem;
+          
           align-content: center;
         }
         
         .mobile-version #info-mob {
-            width: 100%;
             display: block;
             text-align: center;
             align-items: center;
@@ -209,7 +208,8 @@ html{
     
         .mobile-version img{
             width: 100%;
-            margin: 2rem 0;
+            height: auto;
+            margin: 0;
             background-color: rgb(232, 226, 226);
         }
     
