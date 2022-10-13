@@ -438,7 +438,7 @@ html{
             padding: 2rem 1rem;
             border-bottom: 2px solid #0a0a0a;
             border-top: 2px solid #0a0a0a;
-            background-color: rgb(221, 125, 125);
+            background-color: white;
         }
     
         .start .department img{
@@ -449,15 +449,16 @@ html{
             display: none;
         }
 
-        .start .background{
-            
+        .start .department{
+          width: 100%;
+          background-color: white;
+          margin: 0.5rem 0;
         }
     
         .start .background h3{
             display: block;
-            width: 80%;
-            padding:2rem 5rem;
-            margin: 2rem 5rem;
+            padding: 2rem;
+            text-align: center;
             background-color: rgb(222, 219, 219);
             color: rgb(83, 83, 83);
             
