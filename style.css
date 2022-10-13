@@ -180,6 +180,8 @@ html{
           flex-direction: row;
           padding: 0;
           align-content: center;
+          border-bottom: 2px solid #0a0a0a;
+          border-top: 2px solid #0a0a0a;
         }
         
         .mobile-version #info-mob {
@@ -348,7 +350,6 @@ html{
         .info-links{
             width: 100%;
             padding: 0;
-            
         }
     
         #info, #campus, #lecture{
@@ -382,7 +383,7 @@ html{
     display: flex;
     flex-direction: column;
     padding: 2rem 4.5rem;
-    background-color: rgb(240, 239, 239);
+    background-color: rgb(232, 226, 226);
     margin: 0;
     }
     
@@ -437,6 +438,7 @@ html{
             padding: 2rem 1rem;
             border-bottom: 2px solid #0a0a0a;
             border-top: 2px solid #0a0a0a;
+            background-color: rgb(221, 125, 125);
         }
     
         .start .department img{
@@ -446,27 +448,32 @@ html{
         .start .background h5, h6{
             display: none;
         }
+
+        .start .background{
+            
+        }
     
         .start .background h3{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem 1rem 1.5rem 1rem;
-            margin: .5rem;
-            background-color: rgb(204, 200, 200);
+            display: block;
+            width: 80%;
+            padding:2rem 5rem;
+            margin: 2rem 5rem;
+            background-color: rgb(222, 219, 219);
             color: rgb(83, 83, 83);
-            text-align: center;
+            
         }
     
         .start #heading{
-            font-size: 1.5rem;
+            font-size: 2rem;
             padding-bottom: 1rem;
+            font-weight: bold;
         }
 
         .start .courses{
-            border: none;
-            display: flex;
-            flex-direction: column;
+           border: none;
+           display: block;
+           align-items: center;
+
         }
     }
     
