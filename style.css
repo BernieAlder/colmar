@@ -348,13 +348,13 @@ html{
         .info-links{
             width: 100%;
             padding: 0;
-            display: flex;
-            flex-direction: column;
+            
         }
     
         #info, #campus, #lecture{
             border: 0;
             margin-bottom: 32px;
+            display: block;
         }
     
         #campus, #lecture{
@@ -368,8 +368,8 @@ html{
     
         .info-links span{
             padding: 0 1rem;
-            display: flex;
-            flex-direction: row;
+            display: block;
+            
         }
     }
     
