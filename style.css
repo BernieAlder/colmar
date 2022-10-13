@@ -373,6 +373,7 @@ html{
         }
         .info-links button{
             background-color: rgb(210, 207, 207);
+            font-weight: bold;
         }
     }
     
