@@ -425,7 +425,7 @@ html{
     background-color: white;
     }
     
-    .start .department:hover{
+    .start .department:hover, .start .department:active{
     transform: scale(1.075);
     }
     
@@ -439,7 +439,6 @@ html{
             border-bottom: 2px solid #0a0a0a;
             border-top: 2px solid #0a0a0a;
             background-color: white;
-            margin-right: 1rem;
         }
     
         .start .department img{
@@ -464,10 +463,6 @@ html{
             background-color: rgb(222, 219, 219);
             color: rgb(83, 83, 83);
         }
-    
-        .start .department:hover, .start .department:active{
-            transform: scale(1.075);
-            }
 
         .start #heading{
             font-size: 3rem;
@@ -480,7 +475,6 @@ html{
            border: none;
            display: block;
            align-items: center;
-           width: 80%;
         }
     }
     
