@@ -370,6 +370,8 @@ html{
         .info-links span{
             padding: 0 1rem;
             display: block;
+            width: 100%;
+            text-align: center;
             
         }
         .info-links button{
