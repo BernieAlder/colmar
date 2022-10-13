@@ -371,6 +371,9 @@ html{
             display: block;
             
         }
+        .info-links button{
+            background-color: rgb(210, 207, 207);
+        }
     }
     
     /*Third section*/
