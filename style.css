@@ -368,7 +368,7 @@ html{
         }
     
         .info-links span{
-            padding: 0 1rem;
+            padding: 0;
             display: block;
             width: 100%;
             text-align: center;
@@ -427,7 +427,7 @@ html{
     background-color: white;
     }
     
-    .start .department:hover, .start .department:active{
+    .start .department:hover{
     transform: scale(1.075);
     }
     
@@ -459,7 +459,7 @@ html{
     
         .start .background h3{
             display: block;
-            padding: 2rem;
+            padding: 2rem 3rem;
             margin: 0;
             text-align: center;
             background-color: rgb(222, 219, 219);
