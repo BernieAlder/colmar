@@ -188,14 +188,14 @@ html{
             align-items: center;
             margin: 0;
             padding-top: 4.5rem;
-            padding-bottom: 2rem;
+            padding-bottom: 2.5rem;
             background-color: rgb(232, 226, 226);
         }
 
         #info-mob h2{
             padding-bottom: 1.5rem;
             color: rgb(32, 32, 32);
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         #info-mob h3{
@@ -214,7 +214,7 @@ html{
         .mobile-version #info-mob button{
             width: 50%;
             padding: 1.5rem;
-            font-size: 1rem;
+            font-size: 1.5rem;
             background-color: rgb(145, 151, 229);
             font-weight: bold;
             color: black;
