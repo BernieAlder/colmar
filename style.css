@@ -367,7 +367,8 @@ html{
     
         .info-links span{
             padding: 0 1rem;
-            display: block;
+            display: flex;
+            flex-direction: row;
         }
     }
     
